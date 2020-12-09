@@ -1,0 +1,20 @@
+n = 18
+i = 9
+
+while(i <= 9):
+    
+    num = int(input("Guess the Number:"))
+    
+    if num > n:
+        print("Number is Lesser than",num)
+    elif num < n:
+        print("Number is Greater than",num)
+    else:
+        print("Correctly Guessed")
+        print(i,"No. of guesses you took to finish")
+        break
+    print(i - 1,"Number of Guesses left are:")
+    i = i - 1
+    if(i == 0):
+        print("GAME OVER")
+        break
